@@ -1,0 +1,9 @@
+{
+  "name": "edji-types",
+  "version": "1.0.0",
+  "description": "TypeScript all the Edji things",
+  "main": "index.ts",
+  "repository": "https://github.com/codiak/edji-types.git",
+  "author": "Edji",
+  "private": true
+}
