@@ -1,17 +1,5 @@
-import { EdjiComment, User } from '.'
-import { Reading } from './reading'
-import { PublicUser } from './user'
-
-/** Project properties we add on the front end */
-export interface Project extends BaseProject {
-  students: PublicUser[] // front end properties to add more reference info to students
-  temps: PublicUser[] // front end properties to add more reference info to temps
-  co_owners: PublicUser[]
-  owners: PublicUser[]
-  // Front end convenience flags
-  archived?: boolean
-  isTeaching?: boolean
-}
+import { BaseComment, PublicUser, User } from '../'
+import { Reading } from '../reading'
 
 /** The project object as it is returned from the server */
 interface BaseProject {
@@ -21,8 +9,8 @@ interface BaseProject {
   teacher_id: any
   co_owner_ids?: string[]
   owner_id: any
-  comments: EdjiComment[]
-  answers?: EdjiComment[]
+  comments: BaseComment[]
+  answers?: BaseComment[]
   students_ids: string[] // server populates the ids with this object
   temp_ids: string[] // same as above with temp_ids
   label: string

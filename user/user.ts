@@ -1,14 +1,3 @@
-/** Any properties stored server-side should be rendered on BaseUser */
-export interface User extends BaseUser {
-  isLoggedIn: boolean
-  isStudent?: boolean
-  profileIncomplete?: boolean
-  type?: string
-  createdAt: Date
-  updatedAt: Date
-  stripe_customer_id: string
-}
-
 export interface PublicUser {
   _id: string
   username?: string
@@ -21,7 +10,6 @@ export interface PublicUser {
 
 /**
  *  The user we get back from the server
- *  If any properties are added on the front end, they should be added to the User interface
  */
 interface BaseUser {
   _id: string

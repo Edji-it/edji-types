@@ -1,13 +1,4 @@
-import { Project, EdjiQuestion } from '.'
-
-/** Reading with any additional properties we add on the front end */
-export interface Reading extends BaseReading {
-  projects?: Project[]
-  version_count?: number
-  archived?: boolean
-  archivedBegin?: boolean
-  archivedEnd?: boolean
-}
+import { BaseQuestion } from './'
 
 /*
   Last modified: 29 May 2017
@@ -37,7 +28,7 @@ export interface BaseReading {
   parent_id?: string
   version_id?: string
   _id: string
-  questions?: EdjiQuestion[]
+  questions?: BaseQuestion[]
   grade_levels?: number[]
   subjects?: string[]
   heroic?: boolean
