@@ -6,7 +6,7 @@
  * Comment, server
  * - Raw comment data received from server
  */
-export interface BaseComment {
+export interface EdjiComment {
   _id: string
   user_id: string
   start: number

@@ -1,11 +1,11 @@
-import { BaseQuestion } from './'
+import { EdjiQuestion } from './'
 
 /*
   Last modified: 29 May 2017
 */
 
 /** The reading as it is returned from the server */
-export interface BaseReading {
+export interface EdjiReading {
   html?: string
   words?: {
     str?: string
@@ -28,7 +28,7 @@ export interface BaseReading {
   parent_id?: string
   version_id?: string
   _id: string
-  questions?: BaseQuestion[]
+  questions?: EdjiQuestion[]
   grade_levels?: number[]
   subjects?: string[]
   heroic?: boolean
