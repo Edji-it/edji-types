@@ -1,6 +1,6 @@
 export interface iIndexMessage {
   documents: string[]
-  collection: CollectionName
+  collection: DatabaseCollectionName
 }
 
-type CollectionName = 'readings'
+export type DatabaseCollectionName = 'readings'
